@@ -9,7 +9,8 @@
     "http": "^0.0.0",
     "telegram-bot-api": "^1.0.0",
     "sqlite3": "^3.1.1",
-    "npm": ">=3.0.0"
+    "cls-bluebird": "^1.0.1",
+	"has-unicode":"^2.0.0"
   },
   "devDependencies": {},
   "scripts": {
