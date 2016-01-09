@@ -6,18 +6,25 @@ var http = require('http'),
     //sqlite3 = require('sqlite3').verbose(),
     //db = new sqlite3.Database('hodr');
 
-//------------------------------------//
-//FUNCTIONS//
-function Brain(data){
-}
-	
-
 var Hodr = new Bot({
 	token: '143487305:AAF4FZRlkyau2AYkuGlvE8ehORDGG7AbmZ8',
 	updates: {
 		enabled: true
 	}
 });
+	
+//------------------------------------//
+//FUNCTIONS//
+function Handler(data){
+	if(data.text[0]=="/"){//if its a command
+		Cmd_Handler(data);
+	}else{
+		Input_Handler(data);
+	}
+}
+function Cmd_Handler(data){
+
+}
  
 Hodr.on('message', function(message){
 	console.log("@"+message.from.username+"("+message.from.id+")"+": "+message.text);
@@ -28,7 +35,7 @@ Hodr.on('message', function(message){
 							"text":message.text,
 							"date":message.date
 							};
-		Brain(tiny_message);
+		Hanlder(tiny_message);
 	}
 });
 
