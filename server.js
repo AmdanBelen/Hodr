@@ -1,10 +1,17 @@
 var http = require('http'),
     Bot = require('telegram-bot-api'),
-	fs = require('fs');//,
+	fs = require('fs'),
+	jQuery = require('jQuery');
 	//botan = require('botanio')('yQgq2Rn02CkBIBf4H580BVW7UWIIx-Wj'),
     //sqlite3 = require('sqlite3').verbose(),
     //db = new sqlite3.Database('hodr');
- 
+
+//------------------------------------//
+//FUNCTIONS//
+function Brain(data){
+}
+	
+
 var Hodr = new Bot({
 	token: '143487305:AAF4FZRlkyau2AYkuGlvE8ehORDGG7AbmZ8',
 	updates: {
@@ -13,14 +20,27 @@ var Hodr = new Bot({
 });
  
 Hodr.on('message', function(message){
-    console.log(message);
+	console.log("@"+message.from.username+"("+message.from.id+")"+": "+message.text);
+	if(message.chat.type=="private") {
+		var tiny_message = {"id":message.from.id,
+							"username":message.from.username,
+							"first_name":message.from.first_name,
+							"text":message.text,
+							"date":message.date
+							};
+		Brain(tiny_message);
+	}
 });
 
-
 // USER SETTINGS PART // 
+function Update_User(usrId){
+	//Your Data
+	//Hodr.message
+	
+	//Wanted
+	
+}
 
-//Your Data
-//Wanted
 
 
 // MATCHING //
