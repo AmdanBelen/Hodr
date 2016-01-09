@@ -5,7 +5,7 @@ var http = require('http'),
     //sqlite3 = require('sqlite3').verbose(),
     //db = new sqlite3.Database('hodr');
  
-var Hodr = new telegram({
+var Hodr = new Bot({
 	token: '143487305:AAF4FZRlkyau2AYkuGlvE8ehORDGG7AbmZ8',
 	updates: {
 		enabled: true
@@ -24,6 +24,7 @@ Hodr.on('message', function(message){
 
 
 // MATCHING //
+/*
 function rating(target){
 	while(true){
 		var kb = {
@@ -32,7 +33,8 @@ function rating(target){
 			],
 			one_time_keyboard: true
 		};
-		Hodr.sendMessage(target, "Sex + Name + Age");
-		Hodr.sendMessage(target, "Bio", undefined, undefined, kb);	
+		//Hodr.sendMessage(target, "Sex + Name + Age");
+		//Hodr.sendMessage(target, "Bio", undefined, undefined, kb);	
 	}
 }
+*/
