@@ -7,7 +7,7 @@
     "fs": "^0.0.2",
     "botanio": "^0.0.6",
     "http": "^0.0.0",
-    "telegram-bot-bootstrap": "^0.0.15",
+    "telegram-bot-api": "^1.0.0",
     "node-telegram-bot": "^0.1.9",
     "sqlite3": "^3.1.1"
   },
