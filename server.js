@@ -7,8 +7,8 @@ var http = require('http'),
 	
 	
 var Hodr = new Bot('143487305:AAF4FZRlkyau2AYkuGlvE8ehORDGG7AbmZ8');
-Hodr.sendMessage("26560517","test");
-Hodr.getUpdates().then(console.log);
+//Hodr.sendMessage("26560517","test");
+//Hodr.getUpdates().then(console.log);
 // ? you'll see an update message. Look for your user_id in "message.from.id"
 // USER SETTINGS PART // 
 
