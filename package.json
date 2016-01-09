@@ -1,0 +1,38 @@
+{
+  "name": "hodr_bot",
+  "version": "1.0.0",
+  "description": "A Telegram Bot, connects users and make them meet new ones",
+  "main": "server.js",
+  "dependencies": {
+    "fs": "^0.0.2",
+    "botanio": "^0.0.6",
+    "http": "^0.0.0",
+    "telegram-bot-bootstrap": "^0.0.15",
+    "node-telegram-bot": "^0.1.9",
+    "sqlite3": "^3.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test();",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmdanBelen/Hodr.git"
+  },
+  "keywords": [
+    "node",
+    "telegram",
+    "bot",
+    "date",
+    "friends",
+    "ctr",
+    "cathor"
+  ],
+  "author": "Soramdan Belen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AmdanBelen/Hodr/issues"
+  },
+  "homepage": "https://github.com/AmdanBelen/Hodr#readme"
+}
